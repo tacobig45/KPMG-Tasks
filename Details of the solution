@@ -1,0 +1,46 @@
+Challenge 1
+===========
+Three Tier Infrastructure Setup
+Tier 1 Web Tier
+Tier 2 App Tier
+Tier 3 Database Tier
+
+Development Language
+Terraform
+
+
+Components Provisioned
+1 VPC
+4 Subnets ( 1 Web tier, 1 App Tier and 2 for DB Tier)
+2 Route Tables (Public and Private Route Tables)
+2 Gateways ( Internet Gateway and NAT gateway)
+2 EC2 instances for Web and Application Tiers)
+1 RDS maria db instance with basic configuration
+3 Elastic IPs configured for instances and NAT Gateway
+3 Security Groups
+2 NACLs
+1 Key Pair
+
+
+
+
+Best Practices
+1.Traffic restricted at instance and subnet level
+2.Configured Private subnets for the Database and App servers
+3.Reusable Modules
+4.Dynamically updated parameters.
+
+
+Challenge 2
+============
+AWS Boto3 python SDk used for EC2 creation
+Metadata fetched through shell commands in the form of script and redirected into files in Tabular and Json format.
+
+
+Challenge 3
+============
+Basic Python conditional statements used for recursion 
+
+
+
+
