@@ -1,6 +1,6 @@
 
 def pick(input_object, target_key):
-    if type(input_object) is dict and input_object:
+    if type(input_object) is dict:
         for key in input_object:
             if key == target_key:
                 print("{}: {}".format(target_key, input_object[key]))
@@ -8,9 +8,6 @@ def pick(input_object, target_key):
 
                 
 
-    elif type(input_object) is list and input_object:
-        for item in input_object:
-            pick(item, target_key)
 
 
             
